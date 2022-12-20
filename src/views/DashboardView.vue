@@ -21,11 +21,11 @@
                     <ul class="nav navbar-nav  navbar-right ">
                         <li class="dropdown profile">
                             <a href="#" class="dropdown-toggle text-right" data-toggle="dropdown" role="button"
-                                aria-expanded="false"><img src="http://127.0.0.1:8000/storage/users/default.png"
+                                aria-expanded="false"><img src="~@/assets/images/captain-avatar.png"
                                     class="profile-img"> <span class="caret"></span></a>
                             <ul class="dropdown-menu dropdown-menu-animated">
                                 <li class="profile-img">
-                                    <img src="http://127.0.0.1:8000/storage/users/default.png" class="profile-img">
+                                    <img src="~@/assets/images/captain-avatar.png" class="profile-img">
                                     <div class="profile-body">
                                         <h5>Admin</h5>
                                         <h6>admin@admin.com</h6>
@@ -59,102 +59,7 @@
                     </ul>
                 </div>
             </nav>
-            <div class="side-menu sidebar-inverse ps ps--active-x" style="">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="side-menu-container">
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="http://127.0.0.1:8000/admin">
-                                <div class="logo-icon-container">
-                                    <img src="~@/assets/images/Flogo-icon-light.png"
-                                        alt="Logo Icon">
-                                </div>
-                                <div class="title">Voyager</div>
-                            </a>
-                        </div><!-- .navbar-header -->
-
-                        <div class="panel widget center bgimage"
-                            style="background-image:url(http://127.0.0.1:8000/admin/voyager-assets?path=images%2Fbg.jpg); background-size: cover; background-position: 0px;">
-                            <div class="dimmer"></div>
-                            <div class="panel-content">
-                                <img src="http://127.0.0.1:8000/storage/users/default.png" class="avatar"
-                                    alt="Admin avatar">
-                                <h4>Admin</h4>
-                                <p>admin@admin.com</p>
-
-                                <a href="http://127.0.0.1:8000/admin/profile" class="btn btn-primary">Profile</a>
-                                <div style="clear:both"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div id="adminmenu">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a target="_self" href="http://127.0.0.1:8000/admin"><span
-                                        class="icon voyager-boat"></span> <span class="title">Dashboard</span></a>
-                                <!---->
-                            </li>
-                            <li class=""><a target="_self" href="http://127.0.0.1:8000/admin/roles"><span
-                                        class="icon voyager-lock"></span> <span class="title">Roles</span></a>
-                                <!---->
-                            </li>
-                            <li class=""><a target="_self" href="http://127.0.0.1:8000/admin/users"><span
-                                        class="icon voyager-person"></span> <span class="title">Users</span></a>
-                                <!---->
-                            </li>
-                            <li class=""><a target="_self" href="http://127.0.0.1:8000/admin/media"><span
-                                        class="icon voyager-images"></span> <span class="title">Media</span></a>
-                                <!---->
-                            </li>
-                            <li class=""><a target="_self" href="http://127.0.0.1:8000/admin/posts"><span
-                                        class="icon voyager-news"></span> <span class="title">Posts</span></a>
-                                <!---->
-                            </li>
-                            <li class=""><a target="_self" href="http://127.0.0.1:8000/admin/pages"><span
-                                        class="icon voyager-file-text"></span> <span class="title">Pages</span></a>
-                                <!---->
-                            </li>
-                            <li class=""><a target="_self" href="http://127.0.0.1:8000/admin/categories"><span
-                                        class="icon voyager-categories"></span> <span
-                                        class="title">Categories</span></a> <!----></li>
-                            <li class="dropdown"><a target="_self" href="#5-dropdown-element" data-toggle="collapse"
-                                    aria-expanded="false"><span class="icon voyager-tools"></span> <span
-                                        class="title">Tools</span></a>
-                                <div id="5-dropdown-element" class="panel-collapse collapse ">
-                                    <div class="panel-body">
-                                        <ul class="nav navbar-nav">
-                                            <li class=""><a target="_self"
-                                                    href="http://127.0.0.1:8000/admin/menus"><span
-                                                        class="icon voyager-list"></span> <span class="title">Menu
-                                                        Builder</span></a> <!----></li>
-                                            <li class=""><a target="_self"
-                                                    href="http://127.0.0.1:8000/admin/database"><span
-                                                        class="icon voyager-data"></span> <span
-                                                        class="title">Database</span></a> <!----></li>
-                                            <li class=""><a target="_self"
-                                                    href="http://127.0.0.1:8000/admin/compass"><span
-                                                        class="icon voyager-compass"></span> <span
-                                                        class="title">Compass</span></a> <!----></li>
-                                            <li class=""><a target="_self"
-                                                    href="http://127.0.0.1:8000/admin/bread"><span
-                                                        class="icon voyager-bread"></span> <span
-                                                        class="title">BREAD</span></a> <!----></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class=""><a target="_self" href="http://127.0.0.1:8000/admin/settings"><span
-                                        class="icon voyager-settings"></span> <span class="title">Settings</span></a>
-                                <!----></li>
-                        </ul>
-                    </div>
-                </nav>
-                <div class="ps__rail-x" style="width: 60px; left: 0px; bottom: 0px;">
-                    <div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 14px;"></div>
-                </div>
-                <div class="ps__rail-y" style="top: 0px; right: 0px;">
-                    <div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-                </div>
-            </div>
+            <SideMenuView />
             <!-- Main Content -->
             <div class="container-fluid">
                 <div class="side-body padding-top">
@@ -165,7 +70,7 @@
                         <div class="clearfix container-fluid row">
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="panel widget center bgimage"
-                                    style="margin-bottom:0;overflow:hidden;background-image:url('http://127.0.0.1:8000/admin/voyager-assets?path=images%2Fwidget-backgrounds%2F01.jpg');">
+                                    :style="{ marginBottom: 0, overflow: 'hidden', backgroundImage: 'url(' + require('@/assets/images/dashboard/post_1.jpeg') + ')'}">
                                     <div class="dimmer"></div>
                                     <div class="panel-content">
                                         <i class="voyager-group"></i>
@@ -179,7 +84,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="panel widget center bgimage"
-                                    style="margin-bottom:0;overflow:hidden;background-image:url('http://127.0.0.1:8000/admin/voyager-assets?path=images%2Fwidget-backgrounds%2F02.jpg');">
+                                    :style="{ marginBottom: 0, overflow: 'hidden', backgroundImage: 'url(' + require('@/assets/images/dashboard/post_2.jpeg') + ')'}">
                                     <div class="dimmer"></div>
                                     <div class="panel-content">
                                         <i class="voyager-news"></i>
@@ -193,7 +98,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-4">
                                 <div class="panel widget center bgimage"
-                                    style="margin-bottom:0;overflow:hidden;background-image:url('http://127.0.0.1:8000/admin/voyager-assets?path=images%2Fwidget-backgrounds%2F03.jpg');">
+                                    :style="{ marginBottom: 0, overflow: 'hidden', backgroundImage: 'url(' + require('@/assets/images/dashboard/post_3.jpeg') + ')'}">
                                     <div class="dimmer"></div>
                                     <div class="panel-content">
                                         <i class="voyager-file-text"></i>
@@ -297,8 +202,10 @@
 <script>
 require('../assets/js/voyager.js')
 import { onMounted } from 'vue';
+import SideMenuView from '@/components/SideMenuView.vue'
 
 export default {
+    components: { SideMenuView },
     setup() {
 
         onMounted(() => {
