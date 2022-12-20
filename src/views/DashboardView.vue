@@ -295,6 +295,7 @@
 </template>
 
 <script>
+require('../assets/js/voyager.js')
 import { onMounted } from 'vue';
 
 export default {
