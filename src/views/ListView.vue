@@ -368,10 +368,22 @@
 </template>
 
 <script>
+require('@/assets/js/dataTable.js')
+import { onMounted } from 'vue';
 import AdminMasterView from '@/views/AdminMasterView.vue'
 
 export default {
     components: { AdminMasterView },
+    setup() {
+
+        onMounted(() => {
+            
+        })
+
+        return {
+            onMounted
+        }
+    }
 }
 </script>
 

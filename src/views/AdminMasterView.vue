@@ -65,6 +65,7 @@
             </div>
         </div>
     </div>
+
     <footer class="app-footer">
         <div class="site-footer-right">
             Made with <i class="voyager-heart"></i> by <a href="http://thecontrolgroup.com" target="_blank">The
@@ -72,8 +73,7 @@
             - v1.6.0
         </div>
     </footer>
-
-    <!-- Javascript Libs -->
+    
 </template>
 
 <script>
